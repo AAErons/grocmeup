@@ -15,6 +15,7 @@ public class MainController {
 
     private ObjectMapper mapper;
 
+    //TODO test this in application
     @RequestMapping(value = "/getValue/", method = RequestMethod.POST)
     @ResponseBody
     public String getRequest(@RequestBody FirstRequest request) throws JsonProcessingException{
