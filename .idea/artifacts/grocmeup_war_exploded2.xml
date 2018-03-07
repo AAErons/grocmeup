@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="grocmeup_war_exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/grocmeup_war_exploded</output-path>
+    <root id="root">
+      <element id="artifact" artifact-name="grocmeup:war exploded" />
+    </root>
+  </artifact>
+</component>
