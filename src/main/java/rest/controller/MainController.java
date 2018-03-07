@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import rest.model.request.FirstRequest;
 import service.MainService;
 
 @RestController
@@ -16,9 +15,9 @@ public class MainController {
     private ObjectMapper mapper;
 
     //TODO test this in application
-    @RequestMapping(value = "/getValue/", method = RequestMethod.POST)
+    @RequestMapping(value = "/getValue/", method = RequestMethod.GET)
     @ResponseBody
-    public String getRequest(@RequestBody FirstRequest request) throws JsonProcessingException{
-        return mapper.writeValueAsString(mainService.giveResponse(request));
+    public String getRequest() throws JsonProcessingException{
+        return mapper.writeValueAsString(mainService.giveResponse());
     }
 }
