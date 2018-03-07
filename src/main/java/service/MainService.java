@@ -9,9 +9,9 @@ import rest.model.response.FirstResponse;
 @Configurable
 public class MainService {
 
-    public FirstResponse giveResponse(){
+    public FirstResponse giveResponse(String value){
         FirstResponse response = new FirstResponse();
-        response.setValue("hello boi");
+        response.setValue(value);
         return response;
     }
 }
